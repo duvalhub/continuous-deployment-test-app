@@ -1,7 +1,0 @@
-app:
-  name: hello-world
-  type: nginx-webserver
-docker:
-  registry: docker.io
-  namespace: duvalhub
-  repository: helloworld-app
