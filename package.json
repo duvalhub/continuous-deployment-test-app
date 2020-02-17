@@ -1,6 +1,6 @@
 {
   "name": "continuous-deployment-test-app",
-  "version": "2.0.7",
+  "version": "2.0.16",
   "description": "",
   "main": "index.js",
   "scripts": {
