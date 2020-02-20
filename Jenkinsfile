@@ -1,4 +1,4 @@
-@Library('shared-library@master') _
-env.PIPELINE_BRANCH = "master"
+@Library('shared-library@feature/builder-version') _
+env.PIPELINE_BRANCH = "feature/builder-version"
 continuousDeployment()
  
