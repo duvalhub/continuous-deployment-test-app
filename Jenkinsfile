@@ -1,7 +1,7 @@
 @Library([
     'continuous-deployment-library@master', 
-    'shared-library@fix/externalizing-shared-library'
+    'shared-library@improvement/general-improvements'
 ]) _
-env.PIPELINE_BRANCH = "fix/externalizing-shared-library"
+env.PIPELINE_BRANCH = "improvement/general-improvements"
 continuousDeployment()
  
