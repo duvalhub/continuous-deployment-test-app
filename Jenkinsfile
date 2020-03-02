@@ -4,4 +4,3 @@
 ]) _
 env.PIPELINE_BRANCH = "improvement/general-improvements"
 continuousDeployment()
- 
