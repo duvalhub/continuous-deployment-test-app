@@ -1,6 +1,6 @@
 @Library([
-    'continuous-deployment-library@fix/broken-checkout-scm', 
-    'shared-library@fix/broken-checkout-scm'
+    'continuous-deployment-library@master', 
+    'shared-library@improvement/http-request-using-token'
 ]) _
-env.PIPELINE_BRANCH = "fix/broken-checkout-scm"
+env.PIPELINE_BRANCH = "improvement/http-request-using-token"
 continuousDeployment()
