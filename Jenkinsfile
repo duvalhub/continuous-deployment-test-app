@@ -1,6 +1,6 @@
 @Library([
     'continuous-deployment-library@master', 
-    'shared-library@improvement/http-request-using-token'
+    'shared-library@feature/create-networks-during-docker-deploy'
 ]) _
-env.PIPELINE_BRANCH = "improvement/http-request-using-token"
+env.PIPELINE_BRANCH = "feature/create-networks-during-docker-deploy"
 continuousDeployment()
