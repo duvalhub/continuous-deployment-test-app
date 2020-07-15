@@ -10,6 +10,7 @@ node('master') {
         //This is the path library.
         //Run any command to get branch name
         //git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/' | head -n1
+        echo "${WORKSPACE}@shared-library"
         sh "pwd"
         sh "ls -l .."
         sh "ls -al"
