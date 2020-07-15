@@ -10,7 +10,8 @@ node('master') {
         //This is the path library.
         //Run any command to get branch name
         //git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/' | head -n1
-
+        sh "pwd"
+        sh "git branch -a"
         def branch = sh script: "git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/'", returnStdout: true
 
         echo "hello god"
