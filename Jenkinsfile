@@ -12,6 +12,7 @@ node('master') {
         //git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/' | head -n1
         sh "pwd"
         sh "git branch -a"
+        sh "ls -l .."
         def branch = sh script: "git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/'", returnStdout: true
 
         echo "hello god"
