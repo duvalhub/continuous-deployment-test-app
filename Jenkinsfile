@@ -15,6 +15,8 @@ node('master') {
         sh "ls -l .."
         sh "ls -al"
         sh "ls -la ${WORKSPACE}@shared-library@tmp"
+        echo "${WORKSPACE}@shared-library"
+        sh "env"
         sh "git branch -a"
         def branch = sh script: "git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/'", returnStdout: true
 
