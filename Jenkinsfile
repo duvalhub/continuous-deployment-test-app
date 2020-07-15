@@ -21,7 +21,7 @@ node('master') {
         sh "git branch -a"
         def branch = sh script: "git show -s --pretty=%D HEAD | tr -s ',' '\n' | sed 's/^ //' | grep -v -e HEAD -e '^origin/'", returnStdout: true
 */
-        def branch = sh script: "env | grep 'library.shared-library.version' | cut -d '=' -f 2", returnStdout: true, trim: true
+        def branch = sh(script: "env | grep 'library.shared-library.version' | cut -d '=' -f 2", returnStdout: true, trim: true).trim()
 
 //        def branch = env['library.shared-library.version']
         echo "hello god"
