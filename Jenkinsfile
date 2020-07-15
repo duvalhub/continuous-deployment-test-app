@@ -1,6 +1,6 @@
 @Library([
     'continuous-deployment-library@master', 
-    'shared-library@fix/append-stackname-on-networks-and-volumes-name-when-internal'
+    'shared-library@improvement/retrieve-shared-library-at-runtime-instead-of-env-variable'
 ]) _
 
 
